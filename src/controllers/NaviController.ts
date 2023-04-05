@@ -30,7 +30,7 @@ const NavigationList = (req:Request, res:Response) => {
 
 const NavigationPoint = (req:Request, res:Response) => {
   const id:String = req.params.id;
-  const url:String | undefined = process.env.ROBOT_API;
+  const url:String = String(process.env.ROBOT_API);
   let value:String = "";
   switch(id){
     case "1570170238" :
